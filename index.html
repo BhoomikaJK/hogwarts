@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Marauder's Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="activation-overlay">
+        <div class="activation-content">
+            <h1>The Map is Sealed</h1>
+            <p>To reveal its secrets, you must speak the magic words.</p>
+            <input type="text" id="magic-words" placeholder="Name the castle to enter...">
+            <button id="activate-btn">Activate</button>
+        </div>
+    </div>
+
+    <div id="map-wrapper" class="hidden">
+        <div id="map-container">
+            <img src="path/to/your/optimized-hogwarts-map.jpg" id="the-map-image" alt="Hogwarts Map">
+
+            <div class="map-label" style="top: 25%; left: 40%;">
+                <span class="label-name">Dumbledore's Office</span>
+                <span class="label-tooltip">Albus Dumbledore: Currently Pacing</span>
+            </div>
+
+            <svg class="footprints" style="top: 50%; left: 50%;" viewBox="0 0 100 100">
+                </svg>
+        </div>
+    </div>
+
+    <audio id="castle-ambience" loop src="path/to/castle-ambience.mp3"></audio>
+
+    <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
